@@ -29,7 +29,7 @@ class App extends Component {
   }
   constructor(){
     super();
-    console.log('constructor is called');
+    console.log('constructor is called.');
   }
 
   callApi = async () => {
