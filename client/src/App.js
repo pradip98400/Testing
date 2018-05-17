@@ -15,7 +15,6 @@ class App extends Component {
     this.callApi()
       .then(
         res => this.setState({ response: res.name+ ' '+res.express })
-        
       )
       .catch(err => console.log(err));
       fetch('http://facebook.github.io/react-native/movies.json').
@@ -30,7 +29,7 @@ class App extends Component {
   }
   constructor(){
     super();
-    console.log('constructor');
+    console.log('constructor is called');
   }
 
   callApi = async () => {
@@ -47,7 +46,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Welcome to React JS</h1>
         </header>
         <p className="App-intro">{this.state.response}</p>
         <p className="App-intro">{this.state.movie}</p>
